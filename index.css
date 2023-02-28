@@ -1,0 +1,19 @@
+.watch-con{
+    height: 200px;
+    width: 600px;
+    margin: 20px auto 0;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 2px solid royalblue;
+    background: gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 60px;
+}
+button{
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+}
