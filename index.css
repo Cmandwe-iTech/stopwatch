@@ -1,5 +1,5 @@
 .watch-con{
-    height: 200px;
+    height: auto;
     width: 600px;
     margin: 20px auto 0;
     box-sizing: border-box;
@@ -16,4 +16,19 @@ button{
     height: 30px;
     width: 100px;
     font-size: 20px;
+}
+p{
+    font-size: 20px;
+}
+#pause{
+    background: orangered;
+}
+#reset{
+   background: palevioletred;
+}
+#start{
+    background: green;
+}
+#cast{
+    background: sandybrown;
 }
