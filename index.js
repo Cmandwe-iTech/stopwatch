@@ -18,16 +18,13 @@ startbtn.addEventListener("click", () => {
     m++;
     if (m === 1000) {
       sec++;
-      m = "000";
+      m = 0;
       if (sec === 60) {
         min++;
-        if (min < 10) {
-          min = "0" + min;
-        }
-        sec = "00";
+        sec = 0;
         if (min === 60) {
           hr++;
-          min = "00";
+          min = 0;
         }
       }
     }
@@ -47,11 +44,21 @@ startbtn.addEventListener("click", () => {
     if (sec < 10) {
       secs = "0" + sec;
     }
+    if(sec > 9){
+        secs = sec
+    }
+
     if (min < 10) {
       mins = "0" + min;
     }
+    if(min > 9){
+        mins = min
+    }
     if (hr < 10) {
       hrs = "0" + hr;
+    }
+    if(hr > 9){
+        hrs = hr
     }
     display.innerHTML = `${hrs} : ${mins} : ${secs} : ${ms}`;
   }, 1);
